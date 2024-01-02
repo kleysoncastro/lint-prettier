@@ -6,11 +6,11 @@ const fastify = Fastify({
 
 // Declare a route
 fastify.get("/", (request, reply) => {
-	reply.send({ hello: "world" });
+	reply.send({ hello: "word" });
 });
 
 // Run the server!
-fastify.listen({ port: 3000 }, (err, address) => {
+fastify.listen({ port: 3000 }, (err) => {
 	if (err) throw err;
 	// Server is now listening on ${address}
 });
